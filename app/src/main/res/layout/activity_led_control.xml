@@ -1,0 +1,381 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <FrameLayout
+            android:id="@+id/frameLayout_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.cardiomood.android.speedometer.SpeedometerView
+                android:layout_height="180dp"
+                android:layout_width="180dp"
+                android:id="@+id/speedometer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/speed"
+                android:layout_gravity="center"
+                android:paddingTop="20dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/frameLayout_image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.cardiomood.android.speedometer.SpeedometerView
+                android:layout_height="180dp"
+                android:layout_width="180dp"
+                android:id="@+id/speedometer2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/speed2"
+                android:layout_gravity="center"
+                android:paddingTop="20dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEMPERATURE"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HUMIDITY"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIGHT"
+            android:id="@+id/r1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:enabled="true"
+            android:clickable="false"
+            android:buttonTint="#ffeb3b" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:text="ON"
+            android:textSize="20dp"
+            android:background="#64dd17"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/bulb" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="OFF"
+            android:textSize="20dp"
+            android:background="#e53935"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAN"
+            android:id="@+id/r2"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:enabled="true"
+            android:clickable="false"
+            android:buttonTint="#ffeb3b" />
+
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/b1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:text="ON"
+            android:textSize="20dp"
+            android:background="#64dd17"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/fan" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/b2"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="OFF"
+            android:textSize="20dp"
+            android:background="#e53935"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:id="@+id/r3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:enabled="true"
+            android:clickable="false"
+            android:buttonTint="#ffeb3b" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/b3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:text="ON"
+            android:textSize="20dp"
+            android:background="#64dd17"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ac" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/b4"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="OFF"
+            android:textSize="20dp"
+            android:background="#e53935"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAMP"
+            android:id="@+id/r4"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:enabled="true"
+            android:clickable="false"
+            android:buttonTint="#ffeb3b"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/buz1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:text="ON"
+            android:textSize="20dp"
+            android:background="#64dd17"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/lamp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/buz2"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="OFF"
+            android:textSize="20dp"
+            android:background="#e53935"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="DISCONNECT"
+            android:textSize="20dp"
+            android:background="#304ffe"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
